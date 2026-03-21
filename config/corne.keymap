@@ -30,12 +30,12 @@
 // -----------------------------------------------------------------------------------------
 // | TAB  |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  | BSP    |
 // | CTRL |     |C+A+←|C+A+C|C+A+⏎|C+A+→|   |  ←  |  ↓  |  ↑  |  →  |     | BT_CLR |
-// | SHFT |LC(Z)|LC(X)|LC(C)|LC(V)|     |   |     |     |     |     |BT_PRV|BT_NXT |
+// | SHFT |     |     |LC(C)|     |     |   |     |     |     |     |BT_PRV|BT_NXT |
 //                    | GUI | LWR | BSP |   | SPC | RSE | RET |
                         bindings = <
    &kp TAB   &kp N1 &kp N2            &kp N3            &kp N4            &kp N5             &kp N6   &kp N7   &kp N8   &kp N9    &kp N0   &kp BSPC
    &kp LCTRL &trans &kp LC(LA(LEFT))  &kp LC(LA(C))     &kp LC(LA(RET))   &kp LC(LA(RIGHT))  &kp LEFT &kp DOWN &kp UP   &kp RIGHT &trans   &bt BT_CLR
-   &kp LSHFT &kp LC(Z) &kp LC(X)         &kp LC(C)         &kp LC(V)         &trans             &trans   &trans   &trans   &trans    &bt BT_PRV &bt BT_NXT
+   &kp LSHFT &trans &trans         &kp LC(C)         &trans         &trans             &trans   &trans   &trans   &trans    &bt BT_PRV &bt BT_NXT
                     &kp LGUI &mo 1 &kp BSPC   &kp SPACE &mo 2 &kp RET
                         >;
                 };
@@ -48,8 +48,8 @@
 //                    | GUI | LWR | DEL |   | SPC | RSE | RET |
                         bindings = <
    &kp ESC   &kp LS(N1) &kp LS(N2) &kp LS(N3) &kp LS(N4) &kp LS(N5)   &kp LS(N6) &kp LS(N7) &kp LS(N8) &kp LS(N9) &kp LS(N0) &kp PLUS
-   &kp TAB   &trans     &trans     &trans     &trans     &trans       &kp MINUS  &kp EQUAL &kp LBRC    &kp RBRC   &kp BSLH   &kp SQT
-   &kp LSHFT &trans     &trans     &kp LC(C)  &trans     &trans       &kp MINUS  &kp EQUAL &kp LBRC    &kp RBRC   &kp BSLH   &kp SQT
+   &kp TAB   &kp LG(N1)     &kp LG(N2)     &kp LG(N3)     &kp LG(N4)     &kp LG(N5)       &kp MINUS  &kp EQUAL &kp LBRC    &kp RBRC   &kp BSLH   &kp SQT
+   &kp LSHFT &trans     &trans     &trans  &trans     &trans       &kp MINUS  &kp EQUAL &kp LBRC    &kp RBRC   &kp BSLH   &kp SQT
                     &kp LGUI &mo 1 &kp DEL    &kp SPACE &mo 2 &kp RET
                         >;
                 };
