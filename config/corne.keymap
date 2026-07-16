@@ -48,8 +48,8 @@
 //                    | GUI | LWR | DEL |   | SPC | RSE | RET |
                         bindings = <
    &trans      &kp LS(N1) &kp LS(N2) &kp LS(N3) &kp LS(N4) &kp LS(N5)   &kp LS(N6) &kp LS(N7) &kp LS(N8) &kp LS(N9) &kp LS(N0) &kp PLUS
-   &kp TAB   &trans     &trans     &trans     &trans     &trans       &kp MINUS  &kp EQUAL  &kp LBRC   &kp RBRC   &kp BSLH   &kp GRAVE
-   &kp LSHFT &trans     &trans     &trans     &trans     &trans       &kp LS(MINUS) &kp LS(EQUAL) &kp LS(LBRC) &kp LS(RBRC) &kp LS(BSLH) &kp LS(GRAVE)
+   &kp TAB   &trans     &trans     &trans     &trans     &trans       &kp MINUS  &kp EQUAL  &kp LBKT   &kp RBKT   &kp BSLH   &kp GRAVE
+   &kp LSHFT &trans     &trans     &trans     &trans     &trans       &kp LS(MINUS) &kp LS(EQUAL) &kp LS(LBKT) &kp LS(RBKT) &kp LS(BSLH) &kp LS(GRAVE)
                     &kp LGUI &mo 1 &kp DEL    &kp SPACE &mo 2 &kp RET
                         >;
                 };
